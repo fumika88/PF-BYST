@@ -1,0 +1,15 @@
+
+
+<% @photos.each do |photo| %>
+
+<%= render_with_hashtags(photo.caption) %>
+<div>
+  <%= attachment_image_tag photo, :image %>
+  <p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %></p>
+  <p>ショップ名：<%= photo.name %></p>
+  <p>説明：<%= photo.caption %></p>
+  <p>ユーザーネーム：<%= photo.user.name %></p>　
+</div>
+<% end %>
+
+

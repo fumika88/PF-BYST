@@ -1,0 +1,9 @@
+<h2>ハッシュタグ #<%= @tag.hashname %></h2>
+
+    <% @photos.each do |photo| %>
+      <div>
+        <%= link_to photo_path(photo.id) do %>
+        <%= attachment_image_tag photo, :image %>
+        <% end %>
+      </div>
+    <% end %>
