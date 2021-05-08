@@ -1,0 +1,22 @@
+<h1>Users#show</h1>
+
+<div class="profile-container">
+<h3 class="profile-name"><%= @user.name %></h3>
+ <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "20200501_noimage.jp" %>
+<% if @user.id == current_user.id %>
+<p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
+<% end %>
+</div>
+
+<% @photos.each do |photo| %>
+<div>
+  <%= link_to photo_path(photo.id) do %>
+  <%= attachment_image_tag photo, :image, :fill, 100, 100, format: 'jpeg', fallback: 'noimage.jpg', size: '300x300', class: "rounded" %>
+  <% end %>
+  <p>名前:<%= photo.name %></p>
+  <p>説明:<%= render_with_hashtags(photo.caption) %></p>
+  <p>ユーザーネーム：<%= photo.user.name %></p>
+</div>
+<% end %>
+<%# pageメソッドで全ての投稿が表示されないように %>
+<%= paginate @photos %>

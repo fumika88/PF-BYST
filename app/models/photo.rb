@@ -1,12 +1,12 @@
 class Photo < ApplicationRecord
 
-  has_many :photo_hashtag_relations
+  has_many :photo_hashtag_relations, dependent: :destroy
   has_many :hashtags, through: :photo_hashtag_relations
   belongs_to :user
   attachment :image # ここを追加（_idは含めません）
 
   #DBへのコミット直前に実施する
-  after_create do
+   after_create do
     photo = Photo.find_by(id: self.id)
     hashtags  = self.caption.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
     photo.hashtags = []

@@ -1,1 +1,11 @@
-<%= render_with_hashtags(@photo.caption) %>
+<h2>詳細</h2>
+<div class="post-body">
+  <%= attachment_image_tag @photo, :image, :fill, 100, 100, format: 'jpeg', fallback: 'noimage.jpg', size: '300x300', class: "rounded" %>
+  <p>名前：<%= @photo.name %></p>
+  <p>説明：<%= render_with_hashtags(@photo.caption) %></p>
+  <p>ユーザーネーム：<%= @photo.user.name %></p>
+  <p>投稿日時：<%= @photo.created_at.strftime('%Y/%m/%d') %></p>
+   <% if @photo.user == current_user %>
+    <%= link_to "削除", photo_path(@photo), method: :delete %>
+  <% end %>
+</div>
