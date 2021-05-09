@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'search/search'
   devise_for :users
   root :to => "homes#top"
   get '/photo/hashtag/:name', to: "photos#hashtag"
@@ -6,5 +7,6 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destroy]
   end
   resources :users, only: [:show, :edit, :update]
+  get '/search', to: 'search#search'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
