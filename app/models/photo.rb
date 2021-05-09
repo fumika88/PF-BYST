@@ -32,4 +32,16 @@ class Photo < ApplicationRecord
       photo.hashtags << tag
     end
   end
+
+  def self.search_for(content, method)
+    if method == 'perfect'
+      Photo.where(caption: content)
+    elsif method == 'forward'
+      Photo.where('caption LIKE ?', content+'%')
+    elsif method == 'backward'
+      Photo.where('caption LIKE ?', '%'+content)
+    else
+      Photo.where('caption LIKE ?', '%'+content+'%')
+    end
+  end
 end
