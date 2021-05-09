@@ -2,8 +2,14 @@ class Photo < ApplicationRecord
 
   has_many :photo_hashtag_relations, dependent: :destroy
   has_many :hashtags, through: :photo_hashtag_relations
-  belongs_to :user
+  has_many :favorites, dependent: :destroy
   attachment :image # ここを追加（_idは含めません）
+
+  belongs_to :user
+
+  def favorited_by?(user)
+    favorites.where(user_id: user.id).exists?
+  end
 
   #DBへのコミット直前に実施する
    after_create do
