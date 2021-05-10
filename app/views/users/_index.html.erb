@@ -9,7 +9,7 @@
   <tbody>
     <% users.each do |user| %>
       <tr>
-        <td><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "20200501_noimage.jpg") %></td>
+        <td><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "20200501_noimage.jpg", size: '50x50', class: "rounded") %></td>
         <td><%= user.name %></td>
         <td><%= link_to 'Show', user_path(user), class: "user_#{user.id}" %></td>
       </tr>

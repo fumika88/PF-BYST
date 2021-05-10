@@ -11,7 +11,7 @@
     <% photos.each do |photo| %>
       <tr>
         <td><%= link_to user_path(photo.user) do %>
-          <%= attachment_image_tag(photo.user, :profile_image, :fill, 50, 50, fallback: "20200501_noimage.jp") %>
+          <%= attachment_image_tag(photo.user, :profile_image, :fill, 50, 50, fallback: "20200501_noimage.jpg", size: '50x50', class: "rounded") %>
           <% end %>
         </td>
         <td><%= link_to photo.name, photo_path(photo), class: "photo_#{photo.id}" %></td>
