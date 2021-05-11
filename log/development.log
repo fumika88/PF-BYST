@@ -1,0 +1,252 @@
+Started GET "/" for 60.70.102.9 at 2021-05-11 04:33:50 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.5) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 60.70.102.9 at 2021-05-11 04:33:52 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.5) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateHashtags (20210505075740)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "hashtags" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "hashname" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210505075740_create_hashtags.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_hashtags_on_hashname" ON "hashtags" ("hashname")[0m
+  ↳ db/migrate/20210505075740_create_hashtags.rb:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505075740"]]
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotoHashtagRelations (20210505075753)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "photo_hashtag_relations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "photo_id" integer, "hashtag_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3e2e36455d"
+FOREIGN KEY ("photo_id")
+  REFERENCES "photos" ("id")
+, CONSTRAINT "fk_rails_853cd84a22"
+FOREIGN KEY ("hashtag_id")
+  REFERENCES "hashtags" ("id")
+)[0m
+  ↳ db/migrate/20210505075753_create_photo_hashtag_relations.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_photo_hashtag_relations_on_photo_id" ON "photo_hashtag_relations" ("photo_id")[0m
+  ↳ db/migrate/20210505075753_create_photo_hashtag_relations.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_photo_hashtag_relations_on_hashtag_id" ON "photo_hashtag_relations" ("hashtag_id")[0m
+  ↳ db/migrate/20210505075753_create_photo_hashtag_relations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505075753"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20210505080255)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "photos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210505080255_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505080255"]]
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210505081123)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210505081123_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210505081123_devise_create_users.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210505081123_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505081123"]]
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddNameToPhotos (20210505091019)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "photos" ADD "name" varchar[0m
+  ↳ db/migrate/20210505091019_add_name_to_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505091019"]]
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddUserIdToPhotos (20210505091148)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "photos" ADD "user_id" integer[0m
+  ↳ db/migrate/20210505091148_add_user_id_to_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505091148"]]
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddImageIdToPhotos (20210505091251)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "photos" ADD "image_id" varchar[0m
+  ↳ db/migrate/20210505091251_add_image_id_to_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505091251"]]
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddCaptionToPhotos (20210505093556)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "photos" ADD "caption" text[0m
+  ↳ db/migrate/20210505093556_add_caption_to_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210505093556"]]
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddProfileImageIdToUsers (20210508054003)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "profile_image_id" varchar[0m
+  ↳ db/migrate/20210508054003_add_profile_image_id_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210508054003"]]
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to Records (20210508150622)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  ↳ db/migrate/20210508150622_records.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Records (20210508150622)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "favorites"[0m
+  ↳ db/migrate/20210508150622_records.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateFavorites (20210508152144)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20210508152144_create_favorites.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "photo_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210508152144_create_favorites.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (3.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210508152144"]]
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-05-11 05:20:36.427579"], ["updated_at", "2021-05-11 05:20:36.427579"]]
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 60.70.102.9 at 2021-05-11 07:50:48 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.3ms)
+Started GET "/" for 60.70.102.9 at 2021-05-11 07:50:49 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+Completed 200 OK in 13884ms (Views: 13867.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 12243ms (Views: 12242.5ms | ActiveRecord: 0.0ms)
+
+
