@@ -4,7 +4,7 @@
   <nav class="navbar navbar-light bg-light ">
     <div class="container">
     <!-- タイトル -->
-    <a class="navbar-brand" href="#">BYST</a>
+    <a class="navbar-brand" href="#"><%= link_to "BYST", root_path, class: 'nav-link text-dark' %></a>
     <!-- ハンバーガーメニュー -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,6 @@
         </li>
     　　<% else %>
       　<li class="nav-item">
-        <%= link_to "新規登録", new_user_registration_path %>
         <%= link_to "新規登録", new_user_registration_path %>
         <%= link_to "ログイン", new_user_session_path %>
         <%= link_to "about", home_about_path %>
