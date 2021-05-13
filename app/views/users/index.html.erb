@@ -1,0 +1,6 @@
+<h2>ユーザー投稿一覧</h2>
+
+<% @users.each do |user| %>
+<%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "20200501_noimage.jpg", size: '300x300', class: "rounded" %>
+<%= user.name %>
+<% end %>
