@@ -17,13 +17,14 @@
         <% if user_signed_in? %>
         <li class="nav-item">
         <%= link_to '投稿フォーム', new_photo_path %>
-        </li>
         <%= link_to '投稿一覧', photos_path %>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        <%= link_to 'ユーザー一覧', users_path %>
         <%= link_to 'マイページ', user_path(current_user.id) %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
         </li>
     　　<% else %>
       　<li class="nav-item">
+      　<%= link_to 'ゲストログイン（閲覧用）', homes_guest_sign_in_path, method: :post %>
         <%= link_to "新規登録", new_user_registration_path %>
         <%= link_to "ログイン", new_user_session_path %>
         <%= link_to "about", home_about_path %>
