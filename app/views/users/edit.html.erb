@@ -1,18 +1,18 @@
 <div class="container-fulid">
 <div class="row">
-<div class="col-md-12 text-center my-4 mx-4">
-
 <h2>プロフィール編集</h2>
-
+<div class="col-md-12 text-center my-4 mx-4">
 
 <%= form_with model:@user, local:true do |f| %>
 
-  <div><%= attachment_image_tag @user, :profile_image, :fill, 300, 300, fallback: "20200501_noimage.jpg", size: '200x200'%></div>
+  <div><%= attachment_image_tag @user, :profile_image, :fill, 300, 300, fallback: "20200501_noimage.jpg", size: '200x200', class: "rounded-circle"%></div>
   <div>ProfileImage</div>
   <div><%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %></div>
 
   <div>Name</div>
-  <div><%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%></div>
+  <div><%= f.text_field :name, size: "30x5" %></div>
+  <div>Introduction</div>
+  <div><%= f.text_area :introduction, size: "40x7" %></div>
   <div><%= f.submit "変更を保存" %></div>
 <% end %>
 
