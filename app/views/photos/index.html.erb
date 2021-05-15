@@ -1,19 +1,27 @@
-<div class="container-fulid">
+<%#photo一覧%>
+<div class="container py-4" id="photos">
+<h2>Photos</h2>
 <div class="row">
 <% @photos.each do |photo| %>
-<div class="col-md-2 mt-3 mx-5">
-
-
-
-<div>
-  <%= link_to photo_path(photo) do %>
-  <%= attachment_image_tag photo, :image, :fill, 100, 100, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '350x350', class: "rounded"%>
-  <% end %>
-　<p>名前：<%= photo.name %></p>
-  <p>説明：<%= render_with_hashtags(photo.caption) %></p>
+<div class="col-md-3.5 mt-2 mx-4">
+<div class="text-center mx-3">
+<%= attachment_image_tag(photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
+<%= link_to user_path(current_user.id) do %>
+<%= photo.user.name %>
+<% end %>
+</div>
+<div class="card-deck">
+<div class="card">
+<%= link_to photo_path(photo) do %>
+<%= attachment_image_tag photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded"%>
+<% end %>
+<div class="card-body">
+<h6 class="card-title"><%= photo.name %></h6>
+<p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+</div>
 </div>
 
-
+</div>
 </div>
 <% end %>
 </div>
