@@ -1,24 +1,23 @@
 <div class="container-fulid">
 <div class="row">
-<div class="col-md-3">
-
-  <%= attachment_image_tag @photo, :image, :fill, 100, 100, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded" %>
-  <p><%= render "favorites/favorite-btn", photo: @photo %></p>
-  <p>名前：<%= @photo.name %></p>
-  <p>説明：<%= render_with_hashtags(@photo.caption) %></p>
-
-  <p>ユーザーネーム：
+<div class="col-md-12 text-center"><%= image_tag "pexels-fransa-2336840.png", width:"100%",height:"100%" %>
+<div class="card-img-overlay">
+  <p><%= attachment_image_tag(@photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '70x70', class: "rounded-circle" ) %>
   <%= link_to user_path(current_user.id) do %>
   <%= @photo.user.name %>
   <% end %>
   </p>
-   <% if @photo.user == current_user %>
-    <%= link_to "削除", photo_path(@photo), method: :delete %>
+  <%= attachment_image_tag @photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '400x400', class: "rounded" %>
+  <p><%= render "favorites/favorite-btn", photo: @photo %></p>
+  <p>名前：<%= @photo.name %></p>
+  <p>説明：<%= render_with_hashtags(@photo.caption) %></p>
+
+
+  <% if @photo.user == current_user %>
+  <%= link_to "削除", photo_path(@photo), method: :delete %>
   <% end %>
   </div>
 
-  <div class='col-md-8 offset-md-1'>
-   <h2>詳細一覧</h2>
-
+</div>
 </div>
 </div>
