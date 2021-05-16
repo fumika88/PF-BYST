@@ -1,12 +1,18 @@
-<div class="container-fulid">
+<div class="container my-3">
 <div class="row">
-<div class="col-md-12 text-center"><%= image_tag "pexels-fransa-2336840.png", width:"100%",height:"100%" %>
-<div class="card-img-overlay">
-  <p><%= attachment_image_tag(@photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '70x70', class: "rounded-circle" ) %>
+<div class="col-md-12 text-center">
+
+<%# 背景画像まだ決めてない %>
+<%#= image_tag "pexels-fransa-2336840.png", width:"100%",height:"100%" %>
+<%#div class="card-img-overlay"%>
+
+  <div class="my-3">
+  <%= attachment_image_tag(@photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
   <%= link_to user_path(current_user.id) do %>
   <%= @photo.user.name %>
   <% end %>
-  </p>
+  </div>
+
   <%= attachment_image_tag @photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '400x400', class: "rounded" %>
   <p><%= render "favorites/favorite-btn", photo: @photo %></p>
   <p>名前：<%= @photo.name %></p>

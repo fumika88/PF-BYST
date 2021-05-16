@@ -6,7 +6,7 @@
 <div class="col-md-3.5 mt-2 mx-4">
 <div class=" mx-3">
 <%= attachment_image_tag(photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
-<%= link_to user_path(current_user.id) do %>
+<%= link_to user_path(photo.user.id) do %>
 <%= photo.user.name %>
 <% end %>
 </div>
