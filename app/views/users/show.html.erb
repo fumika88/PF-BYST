@@ -1,35 +1,41 @@
 <div class='container py-4'>
 <div class='row'>
-
 <div class='col-md-12'>
 <div class="profile-container">
 <%= image_tag "IMG_1515.jpeg", width:"100%",height:"100%" %>
 <div class="card-img-overlay">
-<h3 class="profile-name"><%= @user.name %></h3>
- <%= attachment_image_tag @user, :profile_image, :fill, 300, 300, format: 'jpeg', fallback: "20200501_noimage.jpg", size: '100x100', class: "rounded-circle" %>
-<div class= "my-4"><%= @user.introduction %></div>
 
+<%= attachment_image_tag @user, :profile_image, :fill, 300, 300, format: 'jpeg', fallback: "20200501_noimage.jpg", size: '100x100', class: "rounded-circle mx-3" %>
+
+
+ <h3 class="profile-name mx-4"><%= @user.name %></h3>
+<div class="mx-3"><%= @user.introduction %>
 <% if @user.id == current_user.id %>
-<p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
-<% end %>
+<%= link_to "プロフィール編集", edit_user_path(@user) %>
+<% end %></div>
+
+</div>
+</div>
 </div>
 </div>
 </div>
 
+<div class="container text-cenetr">
+<div class='row'>
 <% @photos.each do |photo| %>
-<div class="col-md-3.5 mt-2 mx-4">
-<div>
+<div class="col-md-3.5 mt-2 mx-4 my-3">
+<div class="card" style="width: 20rem; text-cenetr my-3"><%#cardレイアウト%>
+<div class="text-center my-3">
   <%= link_to photo_path(photo.id) do %>
   <%= attachment_image_tag photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded" %>
   <% end %>
-  <p>名前:<%= photo.name %></p>
-  <p>説明:<%= render_with_hashtags(photo.caption) %></p>
-  <p>ユーザーネーム：<%= photo.user.name %></p>
+  <p><%= photo.name %></p>
+  <p><%= render_with_hashtags(photo.caption) %></p>
 </div>
 
 <%# pageメソッドで全ての投稿が表示されないように %>
 <%= paginate @photos %>
-
+</div>
  </div>
  <% end %>
  </div>
