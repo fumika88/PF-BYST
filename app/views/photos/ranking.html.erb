@@ -1,0 +1,33 @@
+
+<div class="container py-4" id="photos">
+
+
+<h3 class="text-center">♥Ranking<%= image_tag "undraw_Social_life_re_x7t5.png", width:"20%",height:"20%" %></h3>
+<div class="row">
+<% @photos.each do |photo| %>
+<div class="col-md-3.5 mt-2 mx-4">
+
+<div class=" mx-3">
+<%= render "favorites/favorite-btn", photo: photo %>件のいいね！
+</div>
+<div class="card-deck">
+<div class="card">
+<%= link_to photo_path(photo) do %>
+<%= attachment_image_tag photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded"%>
+<% end %>
+<div class="card-body">
+<div class="card-title">
+<%= attachment_image_tag(photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
+<%= link_to user_path(photo.user.id) do %>
+<%= photo.user.name %>
+
+<% end %></div>
+<p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+</div>
+</div>
+
+</div>
+</div>
+<% end %>
+</div>
+</div>

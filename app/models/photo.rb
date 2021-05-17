@@ -3,6 +3,8 @@ class Photo < ApplicationRecord
   has_many :photo_hashtag_relations, dependent: :destroy
   has_many :hashtags, through: :photo_hashtag_relations
   has_many :favorites, dependent: :destroy
+  has_many :photo_comments, dependent: :destroy
+  has_many :favorited_users, through: :favorites, source: :user #ランキング
   attachment :image
   attachment :profile_image# ここを追加（_idは含めません）
 

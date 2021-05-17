@@ -1,29 +1,44 @@
-<div class="container my-3">
+<div class="container">
 <div class="row">
 <div class="col-md-12 text-center">
+<%= image_tag "IMG_1515.jpeg", width:"100%",height:"20%" %>
+<div class="card-img-overlay",>
+<div class="my-4 h4">
+<%= attachment_image_tag(@photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
+<%= link_to user_path(current_user.id) do %>
+@<%= @photo.user.name %>さんが投稿した画像
+<% end %>
+</div>
+</div>
+<div class='row'>
+<div class="col-md-6 mx-0 pr-0 my-3">
+  <%= attachment_image_tag @photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded" %>
+  <p><%= render "favorites/favorite-btn", photo: @photo %>件のいいね！<i class="far fa-comment"></i><%= @photo.photo_comments.count %></p>
+  <p><%= @photo.name %></p>
+  <p><%= render_with_hashtags(@photo.caption) %></p>
+</div>
 
-<%# 背景画像まだ決めてない %>
-<%#= image_tag "pexels-fransa-2336840.png", width:"100%",height:"100%" %>
-<%#div class="card-img-overlay"%>
 
-  <div class="my-3">
-  <%= attachment_image_tag(@photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
-  <%= link_to user_path(current_user.id) do %>
-  <%= @photo.user.name %>
-  <% end %>
+  <%# コメント機能 %>
+  <div class='col-md-4 offset-md-1 my-4 mx-0 pl-0'>
+  <div class="photo_comments">
+  <%= render 'photo_comments/index', photo: @photo %>
   </div>
+  <div>コメントしてみてね！</div>
+  <%= form_with model:[@photo,@photo_comment] do |f| %>
+  <%= f.text_area :comment, size:"50x5" %>
 
-  <%= attachment_image_tag @photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '400x400', class: "rounded" %>
-  <p><%= render "favorites/favorite-btn", photo: @photo %></p>
-  <p>名前：<%= @photo.name %></p>
-  <p>説明：<%= render_with_hashtags(@photo.caption) %></p>
+
+  <div><%= f.submit '送信'%></div>
+  <% end %>
 
 
   <% if @photo.user == current_user %>
   <%= link_to "削除", photo_path(@photo), method: :delete %>
   <% end %>
-  </div>
 
+</div>
+</div>
 </div>
 </div>
 </div>

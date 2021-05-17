@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_15_081740) do
+ActiveRecord::Schema.define(version: 2021_05_16_032424) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 2021_05_15_081740) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["hashname"], name: "index_hashtags_on_hashname", unique: true
+  end
+
+  create_table "photo_comments", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "photo_id"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "photo_hashtag_relations", force: :cascade do |t|

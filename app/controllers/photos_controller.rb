@@ -7,6 +7,10 @@ class PhotosController < ApplicationController
     @photos = @tag.photos
   end
 
+  def ranking
+    @photos = Photo.includes(:favorited_users).sort {|a,b| b.favorited_users.size <=> a.favorited_users.size}
+  end
+
   def new
     @photo = Photo.new
   end
@@ -25,6 +29,7 @@ class PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
     @user = current_user
+    @photo_comment = PhotoComment.new #追加
   end
 
   def destroy

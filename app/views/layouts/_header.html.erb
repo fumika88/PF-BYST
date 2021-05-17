@@ -19,6 +19,7 @@
         <%= link_to "投稿フォーム", new_photo_path, class: "h5 text-dark my-3" %>
         <%= link_to "投稿一覧", photos_path, class: "h5 text-dark my-3" %>
         <%= link_to "ユーザー一覧", users_path, class: "h5 text-dark my-3" %>
+        <%= link_to "♥Ranking", photo_ranking_path, class: "h5 text-dark my-3" %>
         <%= link_to "My page", user_path(current_user.id), class: "h5 text-dark my-3" %>
         <%= link_to "About", home_about_path, class: "h5 text-dark my-3" %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "h5 text-dark my-3" %>

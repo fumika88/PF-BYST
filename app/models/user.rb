@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :photos, dependent: :destroy
          has_many :favorites, dependent: :destroy
+         has_many :favorited_photos, through: :favorites, source: :photo #ランキング
+         has_many :photo_comments, dependent: :destroy
          attachment :profile_image
 
   def self.search_for(content, method)
