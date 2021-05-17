@@ -28,14 +28,17 @@ BeYouerSelfTransgender = 性別を超えたありのままの自分
 ![Untitled Diagram (1)](https://user-images.githubusercontent.com/79131304/116787021-be781580-aadc-11eb-8423-1eb97c49aae3.jpg)
 
 
+
 ## チャレンジ要素一覧
-https://docs.google.com/spreadsheets/d/1DNCeICTg2EYGeNDwoqKGropSjT6GL7ud92xMmg2dJxc/edit#gid=0
+https://docs.google.com/spreadsheets/d/1DNCeICTg2EYGeNDwoqKGropSjT6GL7ud92xMmg2dJxc/edit#gid=0  
+[PF_BYST_テーブル定義書.xlsx](https://github.com/fumika88/PF-BYST/files/6491367/PF_BYST_.xlsx)
 
 
 ## 開発環境
 - OS：Linux(CentOS)
 - 言語：HTML,CSS,JavaScript,Ruby,SQL
 - フレームワーク：Ruby on Rails
+
 - JSライブラリ：jQuery
 - IDE：Cloud9
 
