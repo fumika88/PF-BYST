@@ -41356,3 +41356,1600 @@ Processing by PhotosController#show as HTML
 Completed 200 OK in 153ms (Views: 148.1ms | ActiveRecord: 0.8ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddCategoryIdToPhotos (20210517153844)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "photos" ADD "category_id" integer[0m
+  ↳ db/migrate/20210517153844_add_category_id_to_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210517153844"]]
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 60.70.102.9 at 2021-05-17 15:48:44 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (495.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (16.1ms)
+  Rendered layouts/_header.html.erb (207.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 937ms (Views: 927.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 15:48:53 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 15:50:20 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 15:50:23 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:08:40 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (11.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 110ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:10:11 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (398.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (11.7ms)
+  Rendered layouts/_header.html.erb (131.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 775ms (Views: 756.8ms | ActiveRecord: 10.0ms)
+
+
+Started DELETE "/users/sign_out" for 60.70.102.9 at 2021-05-17 16:10:16 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z3zt6ZjotgqXL5R-N8qlMWvDj79zeiCvrGzYQxBYlXqMhRkX8z8P04DT-PLEIzmr_D0kCNAsbdXaQZHn3xQUQw"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 45ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:10:17 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/homes/guest_sign_in" for 60.70.102.9 at 2021-05-17 16:10:19 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#guest_sign_in as HTML
+  Parameters: {"authenticity_token"=>"K4ks-HT4X67r0caiD_BbHaLIpIBkAY4DytAuAUs1W0kDFzXr3Ewgbe0xTpqsz6FRvxWaIz3PF9sKZytNWoG8bg"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "guest@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:9
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:10:19 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (4.0ms)
+  Rendered layouts/_header.html.erb (11.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 156ms (Views: 154.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:10:22 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:13:38 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (365.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (7.4ms)
+  Rendered layouts/_header.html.erb (112.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 715ms (Views: 708.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:13:42 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:24:46 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (390.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (7.4ms)
+  Rendered layouts/_header.html.erb (130.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 743ms (Views: 723.2ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:24:51 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:26:58 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:30:45 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (378.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (86.0ms)
+  Rendered layouts/_header.html.erb (131.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 716ms (Views: 709.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:30:51 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `category' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:31:57 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `　' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:32:00 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `　' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:32:21 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (363.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (86.3ms)
+  Rendered layouts/_header.html.erb (114.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 714ms (Views: 706.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:32:25 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (undefined local variable or method `　' for PhotosController:Class):
+  
+app/controllers/photos_controller.rb:14:in `<class:PhotosController>'
+app/controllers/photos_controller.rb:1:in `<main>'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:34:12 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+NoMethodError (undefined method `　get' for #<ActionDispatch::Routing::Mapper:0x00007f22c10c2548>
+Did you mean?  get):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:34:15 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/photos/new"):
+  
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:34:17 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/photos/new"):
+  
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:36:03 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (359.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (3.4ms)
+  Rendered layouts/_header.html.erb (125.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 757ms (Views: 749.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:36:07 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `　belongs_to_active_hash' for #<Class:0x00007f70c4a98288>
+Did you mean?  belongs_to_active_hash):
+  
+app/models/photo.rb:4:in `<class:Photo>'
+app/models/photo.rb:1:in `<main>'
+app/controllers/photos_controller.rb:21:in `new'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 60.70.102.9 at 2021-05-17 16:36:57 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (368.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (6.9ms)
+  Rendered layouts/_header.html.erb (126.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 741ms (Views: 733.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:37:05 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `　belongs_to_active_hash' for #<Class:0x00007f8ec0a15a80>
+Did you mean?  belongs_to_active_hash):
+  
+app/models/photo.rb:4:in `<class:Photo>'
+app/models/photo.rb:1:in `<main>'
+app/controllers/photos_controller.rb:21:in `new'
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-17 16:39:00 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/new.html.erb within layouts/application (24.8ms)
+  Rendered layouts/_search.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 225ms (Views: 150.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/photos" for 60.70.102.9 at 2021-05-17 16:39:22 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBGVJzgOtB4zqdNP7VIUjSHsyRtGGnNmVO0p1SThn1A4j4w0kLrL3TVJW3dObe7BPDH3uB_U6r6UWiyZNVV4dw", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8ec1d041c8 @tempfile=#<Tempfile:/tmp/RackMultipart20210517-13589-15iz28o.jpg>, @original_filename="pexels-anna-shvets-4611751.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"pexels-anna-shvets-4611751.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"test", "caption"=>"#test", "category_id"=>"1"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mPhoto Create (3.8ms)[0m  [1m[32mINSERT INTO "photos" ("created_at", "updated_at", "name", "user_id", "image_id", "caption", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2021-05-17 16:39:22.699898"], ["updated_at", "2021-05-17 16:39:22.699898"], ["name", "test"], ["user_id", 3], ["image_id", "240e71a1c2080e6ffa19f27c92752c4e8f8e7c708a865e9cb2659d3c4cc3"], ["caption", "#test"], ["category_id", 1]]
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/models/photo.rb:22
+  [1m[36mHashtag Load (0.1ms)[0m  [1m[34mSELECT "hashtags".* FROM "hashtags" INNER JOIN "photo_hashtag_relations" ON "hashtags"."id" = "photo_hashtag_relations"."hashtag_id" WHERE "photo_hashtag_relations"."photo_id" = ?[0m  [["photo_id", 13]]
+  ↳ app/models/photo.rb:24
+  [1m[36mHashtag Load (0.1ms)[0m  [1m[34mSELECT  "hashtags".* FROM "hashtags" WHERE "hashtags"."hashname" = ? LIMIT ?[0m  [["hashname", "test"], ["LIMIT", 1]]
+  ↳ app/models/photo.rb:27
+  [1m[36mPhotoHashtagRelation Create (2.6ms)[0m  [1m[32mINSERT INTO "photo_hashtag_relations" ("photo_id", "hashtag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["photo_id", 13], ["hashtag_id", 1], ["created_at", "2021-05-17 16:39:22.745066"], ["updated_at", "2021-05-17 16:39:22.745066"]]
+  ↳ app/models/photo.rb:28
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/photos_controller.rb:28
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/photos
+Completed 302 Found in 99ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-17 16:39:22 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    18: <div class="card-body">
+    19: <h6 class="card-title"><%= photo.name %></h6>
+    20: <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+    21: <p>カテゴリ:<%= photo.category.name %></p>
+    22: </div>
+    23: </div>
+    24: 
+  
+app/views/photos/index.html.erb:21:in `block in _app_views_photos_index_html_erb__2106806058407492335_70125559617920'
+app/views/photos/index.html.erb:5:in `_app_views_photos_index_html_erb__2106806058407492335_70125559617920'
+Started GET "/photos" for 60.70.102.9 at 2021-05-17 16:41:27 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.8ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/photos_controller.rb:34:in `index'
+Started GET "/photos" for 60.70.102.9 at 2021-05-17 16:41:38 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    18: <div class="card-body">
+    19: <h6 class="card-title"><%= photo.name %></h6>
+    20: <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+    21: <p>カテゴリ:<%= photo.category.name %></p>
+    22: </div>
+    23: </div>
+    24: 
+  
+app/views/photos/index.html.erb:21:in `block in _app_views_photos_index_html_erb__2106806058407492335_70125576894380'
+app/views/photos/index.html.erb:5:in `_app_views_photos_index_html_erb__2106806058407492335_70125576894380'
+Started GET "/photos" for 60.70.102.9 at 2021-05-17 16:41:52 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (29.6ms)
+  Rendered layouts/_search.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 142ms (Views: 138.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/attachments/5bb146a6ffbae0a9d0580f5e5fedc8abec62d6ef/store/fill/300/300/240e71a1c2080e6ffa19f27c92752c4e8f8e7c708a865e9cb2659d3c4cc3/image.jpeg" for 60.70.102.9 at 2021-05-17 16:41:52 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-05-17 16:41:56 +0000] GET "/5bb146a6ffbae0a9d0580f5e5fedc8abec62d6ef/store/fill/300/300/240e71a1c2080e6ffa19f27c92752c4e8f8e7c708a865e9cb2659d3c4cc3/image.jpeg" 200 3762.8ms
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-17 16:42:58 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (10.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 10.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    18: <div class="card-body">
+    19: <h6 class="card-title"><%= photo.name %></h6>
+    20: <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+    21: <p>カテゴリ:<%= photo.category.name %></p>
+    22: </div>
+    23: </div>
+    24: 
+  
+app/views/photos/index.html.erb:21:in `block in _app_views_photos_index_html_erb__2106806058407492335_70125562804620'
+app/views/photos/index.html.erb:5:in `_app_views_photos_index_html_erb__2106806058407492335_70125562804620'
+Started GET "/" for 60.70.102.9 at 2021-05-18 14:50:44 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (411.1ms)
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 611ms (Views: 602.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-18 14:58:43 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (300.3ms)
+  Rendered layouts/_header.html.erb (11.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 503ms (Views: 496.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/homes/guest_sign_in" for 60.70.102.9 at 2021-05-18 14:58:54 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#guest_sign_in as HTML
+  Parameters: {"authenticity_token"=>"6dGnHNZVDog7Qh7QWLwvAjtp-LqhlkhQCFZpcSEhq0jWL1L0UVM6VrWPEmznkf8ZK7POY7IY9lawtcfX7KvM3w"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "guest@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:9
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 20ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-18 14:58:54 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (11.1ms)
+  Rendered layouts/_header.html.erb (18.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 119ms (Views: 117.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-18 14:59:08 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (34.8ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    18: <div class="card-body">
+    19: <h6 class="card-title"><%= photo.name %></h6>
+    20: <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+    21: <p>カテゴリ:<%= photo.category.name %></p>
+    22: </div>
+    23: </div>
+    24: 
+  
+app/views/photos/index.html.erb:21:in `block in _app_views_photos_index_html_erb__2529926104290532628_70178134452600'
+app/views/photos/index.html.erb:5:in `_app_views_photos_index_html_erb__2529926104290532628_70178134452600'
+Started GET "/photos" for 60.70.102.9 at 2021-05-18 15:00:48 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (28.9ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 124ms (Views: 120.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-18 15:07:35 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (315.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (7.9ms)
+  Rendered layouts/_header.html.erb (108.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 601ms (Views: 592.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-18 15:07:39 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    18: <div class="card-body">
+    19: <h6 class="card-title"><%= photo.name %></h6>
+    20: <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+    21: <p>カテゴリ:<%= photo.category.name %></p><%# photo.category.nameにするとエラーになる %>
+    22: </div>
+    23: </div>
+    24: 
+  
+app/views/photos/index.html.erb:21:in `block in _app_views_photos_index_html_erb___2507381125798100281_70097194120220'
+app/views/photos/index.html.erb:5:in `_app_views_photos_index_html_erb___2507381125798100281_70097194120220'
+Started GET "/" for 60.70.102.9 at 2021-05-18 15:35:51 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (392.8ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 571ms (Views: 558.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-18 15:35:52 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (7.7ms)
+  Rendered layouts/_header.html.erb (69.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 159ms (Views: 155.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-18 15:35:57 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:8
+  Rendered photos/index.html.erb within layouts/application (31.0ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    18: <div class="card-body">
+    19: <h6 class="card-title"><%= photo.name %></h6>
+    20: <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+    21:  <p>カテゴリ:<%= photo.category.name %></p><%# photo.category.nameにするとエラーになる %>
+    22: </div>
+    23: </div>
+    24: 
+  
+app/views/photos/index.html.erb:21:in `block in _app_views_photos_index_html_erb__3271325551779537853_69947004490500'
+app/views/photos/index.html.erb:5:in `_app_views_photos_index_html_erb__3271325551779537853_69947004490500'
+Started GET "/" for 60.70.102.9 at 2021-05-18 15:40:24 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (325.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (11.6ms)
+  Rendered layouts/_header.html.erb (241.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 759ms (Views: 746.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-18 15:40:28 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:38: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/photos/index.html.erb:38: syntax error, unexpected end-of-input, expecting end
+Started GET "/photos" for 60.70.102.9 at 2021-05-18 15:41:12 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 164ms (Views: 159.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-18 15:41:36 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/new.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_search.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/photos" for 60.70.102.9 at 2021-05-18 15:41:53 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sIJa2G-TCyYcfDe3jpKY2-q4Ir4CYoaviggEUqn5RoEq_3-9PRXeuHSxV9F5TJDiFfeaZFc8sE-R91-jGbd3hQ", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f480689ad00 @tempfile=#<Tempfile:/tmp/RackMultipart20210518-9569-1lqdle0.jpg>, @original_filename="pexels-anna-shvets-4611825.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"pexels-anna-shvets-4611825.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"test", "caption"=>"#test", "category_id"=>"4"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mPhoto Create (0.7ms)[0m  [1m[32mINSERT INTO "photos" ("created_at", "updated_at", "name", "user_id", "image_id", "caption", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2021-05-18 15:41:53.304321"], ["updated_at", "2021-05-18 15:41:53.304321"], ["name", "test"], ["user_id", 3], ["image_id", "920a20e8c5d45e469d69758cc2e9cbe7c768a37cbd76ef373364f1e6cb1b"], ["caption", "#test"], ["category_id", 4]]
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/models/photo.rb:22
+  [1m[36mHashtag Load (0.1ms)[0m  [1m[34mSELECT "hashtags".* FROM "hashtags" INNER JOIN "photo_hashtag_relations" ON "hashtags"."id" = "photo_hashtag_relations"."hashtag_id" WHERE "photo_hashtag_relations"."photo_id" = ?[0m  [["photo_id", 14]]
+  ↳ app/models/photo.rb:24
+  [1m[36mHashtag Load (0.1ms)[0m  [1m[34mSELECT  "hashtags".* FROM "hashtags" WHERE "hashtags"."hashname" = ? LIMIT ?[0m  [["hashname", "test"], ["LIMIT", 1]]
+  ↳ app/models/photo.rb:27
+  [1m[36mPhotoHashtagRelation Create (2.5ms)[0m  [1m[32mINSERT INTO "photo_hashtag_relations" ("photo_id", "hashtag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["photo_id", 14], ["hashtag_id", 1], ["created_at", "2021-05-18 15:41:53.350217"], ["updated_at", "2021-05-18 15:41:53.350217"]]
+  ↳ app/models/photo.rb:28
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/photos_controller.rb:28
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/photos
+Completed 302 Found in 132ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-18 15:41:53 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_search.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/6138729e86444bf7d0c884d384ed15946cc1613a/store/fill/300/300/920a20e8c5d45e469d69758cc2e9cbe7c768a37cbd76ef373364f1e6cb1b/image.jpeg" for 60.70.102.9 at 2021-05-18 15:41:53 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-05-18 15:41:57 +0000] GET "/6138729e86444bf7d0c884d384ed15946cc1613a/store/fill/300/300/920a20e8c5d45e469d69758cc2e9cbe7c768a37cbd76ef373364f1e6cb1b/image.jpeg" 200 3375.6ms
+
+Started GET "/" for 60.70.102.9 at 2021-05-20 04:04:26 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (382.1ms)
+  Rendered layouts/_header.html.erb (9.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 618ms (Views: 608.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/homes/guest_sign_in" for 60.70.102.9 at 2021-05-20 04:04:30 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#guest_sign_in as HTML
+  Parameters: {"authenticity_token"=>"rDgzI-P0ElxeLh4piLyBGJmqkybCvSUp9KCndtq8tm1eenNe6V1wEjfkBZ1FFgWDrPJwRi4eg18WihNM0HdSkQ"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "guest@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/homes_controller.rb:9
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 19ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-20 04:04:30 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (55.0ms)
+  Rendered layouts/_header.html.erb (62.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 155ms (Views: 154.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:04:34 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (45.8ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 282ms (Views: 231.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-20 04:04:39 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 85.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/photos" for 60.70.102.9 at 2021-05-20 04:05:03 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"67IW-COWtoSZSDPHkA7aN8r_gxmCHAF1Uv8EhZX-n57PRfLfpYB2K6Pf93Q6-UiSjaPHR2SCFPuKaCo5S24UTg", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007efcde1d3e18 @tempfile=#<Tempfile:/tmp/RackMultipart20210520-7464-1sxbx25.jpg>, @original_filename="pexels-ana-maria-moroz-1700771.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"pexels-ana-maria-moroz-1700771.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"test", "caption"=>"#test", "category_id"=>"4"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mPhoto Create (0.3ms)[0m  [1m[32mINSERT INTO "photos" ("created_at", "updated_at", "name", "user_id", "image_id", "caption", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2021-05-20 04:05:03.998266"], ["updated_at", "2021-05-20 04:05:03.998266"], ["name", "test"], ["user_id", 3], ["image_id", "d8206131258da5614cba6b702c475cd4ca52d0a441b70c6afea33180ffbf"], ["caption", "#test"], ["category_id", 4]]
+  ↳ app/controllers/photos_controller.rb:28
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/models/photo.rb:22
+  [1m[36mHashtag Load (0.1ms)[0m  [1m[34mSELECT "hashtags".* FROM "hashtags" INNER JOIN "photo_hashtag_relations" ON "hashtags"."id" = "photo_hashtag_relations"."hashtag_id" WHERE "photo_hashtag_relations"."photo_id" = ?[0m  [["photo_id", 15]]
+  ↳ app/models/photo.rb:24
+  [1m[36mHashtag Load (0.1ms)[0m  [1m[34mSELECT  "hashtags".* FROM "hashtags" WHERE "hashtags"."hashname" = ? LIMIT ?[0m  [["hashname", "test"], ["LIMIT", 1]]
+  ↳ app/models/photo.rb:27
+  [1m[36mPhotoHashtagRelation Create (3.1ms)[0m  [1m[32mINSERT INTO "photo_hashtag_relations" ("photo_id", "hashtag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["photo_id", 15], ["hashtag_id", 1], ["created_at", "2021-05-20 04:05:04.045018"], ["updated_at", "2021-05-20 04:05:04.045018"]]
+  ↳ app/models/photo.rb:28
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/photos_controller.rb:28
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/photos
+Completed 302 Found in 85ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:05:04 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 93.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/attachments/e8f3a50ed5b5a5080eb22e46349441115839aeea/store/fill/300/300/d8206131258da5614cba6b702c475cd4ca52d0a441b70c6afea33180ffbf/image.jpeg" for 60.70.102.9 at 2021-05-20 04:05:04 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-05-20 04:05:10 +0000] GET "/e8f3a50ed5b5a5080eb22e46349441115839aeea/store/fill/300/300/d8206131258da5614cba6b702c475cd4ca52d0a441b70c6afea33180ffbf/image.jpeg" 200 5692.6ms
+
+Started GET "/photos/14" for 60.70.102.9 at 2021-05-20 04:05:16 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:38
+  Rendering photos/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."photo_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["photo_id", 14], ["user_id", 3], ["LIMIT", 1]]
+  ↳ app/models/photo.rb:17
+  [1m[35m (72.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."photo_id" = ?[0m  [["photo_id", 14]]
+  ↳ app/views/favorites/_favorite-btn.html.erb:5
+  Rendered favorites/_favorite-btn.html.erb (84.1ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_comments" WHERE "photo_comments"."photo_id" = ?[0m  [["photo_id", 14]]
+  ↳ app/views/photos/show.html.erb:28
+  [1m[36mPhotoComment Load (0.2ms)[0m  [1m[34mSELECT "photo_comments".* FROM "photo_comments" WHERE "photo_comments"."photo_id" = ?[0m  [["photo_id", 14]]
+  ↳ app/views/photo_comments/_index.html.erb:5
+  Rendered photo_comments/_index.html.erb (3.6ms)
+  Rendered photos/show.html.erb within layouts/application (113.5ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 289ms (Views: 164.6ms | ActiveRecord: 83.1ms)
+
+
+Started DELETE "/photos/14" for 60.70.102.9 at 2021-05-20 04:05:19 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"l9DJKKM2gGNOVODp0GAV8-8zay3TuX8R7BL2tCCIFhplkolVqZ_iLSee-10dypFo2muITT8a2WcOOEKOKkPy5g", "id"=>"14"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:45
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:46
+  [1m[36mPhotoHashtagRelation Load (0.2ms)[0m  [1m[34mSELECT "photo_hashtag_relations".* FROM "photo_hashtag_relations" WHERE "photo_hashtag_relations"."photo_id" = ?[0m  [["photo_id", 14]]
+  ↳ app/controllers/photos_controller.rb:46
+  [1m[36mPhotoHashtagRelation Destroy (36.2ms)[0m  [1m[31mDELETE FROM "photo_hashtag_relations" WHERE "photo_hashtag_relations"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/photos_controller.rb:46
+  [1m[36mFavorite Load (0.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."photo_id" = ?[0m  [["photo_id", 14]]
+  ↳ app/controllers/photos_controller.rb:46
+  [1m[36mPhotoComment Load (0.1ms)[0m  [1m[34mSELECT "photo_comments".* FROM "photo_comments" WHERE "photo_comments"."photo_id" = ?[0m  [["photo_id", 14]]
+  ↳ app/controllers/photos_controller.rb:46
+  [1m[36mPhoto Destroy (0.1ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/photos_controller.rb:46
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/photos_controller.rb:46
+Redirected to https://7016752b5d8d464ebe340bb7e335e14e.vfs.cloud9.us-east-1.amazonaws.com/photos
+Completed 302 Found in 132ms (ActiveRecord: 43.8ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:05:19 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_search.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 94ms (Views: 89.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:07:16 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_search.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (10.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 170ms (Views: 160.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:07:25 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:8: unterminated regexp meets end of file
+          end
+              ^
+/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:8: unmatched close parenthesis: /p>
+<% end );
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+/m
+/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:8: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/photos/category.html.erb:8: unterminated regexp meets end of file
+app/views/photos/category.html.erb:8: unmatched close parenthesis: /p>
+app/views/photos/category.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:10:00 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:22: syntax error, unexpected '<'
+...gory );@output_buffer.append=(</p>
+...                              ^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:25: unknown regexp options - dv
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:25: unmatched close parenthesis: /p>
+ <%= link_to "\u30AB\u30C6\u30B4\u30EA", photo_category_path );@output_buffer.safe_append=' '.freeze;
+@output_buffer.safe_append='
+</i
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:26: syntax error, unexpected '<'
+</div>
+^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:28: unknown regexp options - dv
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:29: syntax error, unexpected '<'
+</div>
+^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:32: unknown regexp options - dv
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:33: syntax error, unexpected '<'
+</div>
+^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:40: unterminated regexp meets end of file
+          end
+              ^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:40: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/photos/index.html.erb:22: syntax error, unexpected '<'
+app/views/photos/index.html.erb:25: unknown regexp options - dv
+app/views/photos/index.html.erb:25: unmatched close parenthesis: /p>
+app/views/photos/index.html.erb:26: syntax error, unexpected '<'
+app/views/photos/index.html.erb:28: unknown regexp options - dv
+app/views/photos/index.html.erb:29: syntax error, unexpected '<'
+app/views/photos/index.html.erb:32: unknown regexp options - dv
+app/views/photos/index.html.erb:33: syntax error, unexpected '<'
+app/views/photos/index.html.erb:40: unterminated regexp meets end of file
+app/views/photos/index.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 60.70.102.9 at 2021-05-20 04:10:09 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 96ms (Views: 92.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:10:13 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:22: syntax error, unexpected '<'
+...gory );@output_buffer.append=(</p>
+...                              ^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:25: unknown regexp options - dv
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:25: unmatched close parenthesis: /p>
+ <%= link_to "\u30AB\u30C6\u30B4\u30EA", photo_category_path );@output_buffer.safe_append=' '.freeze;
+@output_buffer.safe_append='
+</i
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:26: syntax error, unexpected '<'
+</div>
+^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:28: unknown regexp options - dv
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:29: syntax error, unexpected '<'
+</div>
+^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:32: unknown regexp options - dv
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:33: syntax error, unexpected '<'
+</div>
+^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:40: unterminated regexp meets end of file
+          end
+              ^
+/home/ec2-user/environment/PF-BYST/app/views/photos/index.html.erb:40: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/photos/index.html.erb:22: syntax error, unexpected '<'
+app/views/photos/index.html.erb:25: unknown regexp options - dv
+app/views/photos/index.html.erb:25: unmatched close parenthesis: /p>
+app/views/photos/index.html.erb:26: syntax error, unexpected '<'
+app/views/photos/index.html.erb:28: unknown regexp options - dv
+app/views/photos/index.html.erb:29: syntax error, unexpected '<'
+app/views/photos/index.html.erb:32: unknown regexp options - dv
+app/views/photos/index.html.erb:33: syntax error, unexpected '<'
+app/views/photos/index.html.erb:40: unterminated regexp meets end of file
+app/views/photos/index.html.erb:40: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:10:36 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_search.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 108ms (Views: 104.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:10:39 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:8: unterminated regexp meets end of file
+          end
+              ^
+/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:8: unmatched close parenthesis: /p>
+<% end );
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+/m
+/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:8: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/photos/category.html.erb:8: unterminated regexp meets end of file
+app/views/photos/category.html.erb:8: unmatched close parenthesis: /p>
+app/views/photos/category.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:11:36 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @Photo.each do |photo| %>
+    3: <p>カテゴリ名：<%= photo.category.name %></p>
+    4: <% end %>
+  
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812251696620'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:11:52 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @Photos.each do |photo| %>
+    3: <p>カテゴリ名：<%= photo.category.name %></p>
+    4: <% end %>
+  
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812265544000'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:11:54 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @Photos.each do |photo| %>
+    3: <p>カテゴリ名：<%= photo.category.name %></p>
+    4: <% end %>
+  
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812249789140'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:12:43 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @Photos.each do |photo| %>
+    3: <p>カテゴリ名：<%= photo.category %></p>
+    4: <% end %>
+  
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812264996100'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:25:46 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @Photos.each do |photo| %>
+    3: <p>カテゴリ名：<%= photo.category %></p>
+    4: <% end %>
+  
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812258905720'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:26:39 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_search.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 132ms (Views: 102.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:26:55 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @photos.each do |photo| %>
+    3: <p>カテゴリ名：<%= photo.category.name %></p>
+    4: <% end %>
+  
+app/views/photos/category.html.erb:3:in `block in _app_views_photos_category_html_erb__1435697054154705471_69812259473160'
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812259473160'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:27:35 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:9: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/photos/category.html.erb:9: syntax error, unexpected end-of-input, expecting end
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:27:48 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_search.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 87ms (Views: 82.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:27:50 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_search.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (10.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 118ms (Views: 111.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 60.70.102.9 at 2021-05-20 04:28:10 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:8
+  Rendered layouts/_search.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (11.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos/new" for 60.70.102.9 at 2021-05-20 04:28:14 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/new.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (11.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 109ms (Views: 103.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/photos" for 60.70.102.9 at 2021-05-20 04:28:18 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/photos/index.html.erb:9
+  Rendered photos/index.html.erb within layouts/application (25.2ms)
+  Rendered layouts/_search.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 106ms (Views: 101.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:28:21 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_search.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 84.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:29:03 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_search.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 107ms (Views: 100.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:29:36 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @photos.each do |photo| %>
+    3: <p>カテゴリ名: <%= photo.category.name %></p>
+    4: <% end %>
+  
+app/views/photos/category.html.erb:3:in `block in _app_views_photos_category_html_erb__1435697054154705471_69812252281060'
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812252281060'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:30:00 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h2>カテゴリー一覧</h2>
+    2: <% @photos.each do |photo| %>
+    3: <% if photo.category.name %>
+    4: <p>カテゴリ名: <%= photo.category.name if photo.category.name %></p>
+    5: <% end %>
+    6: <% end %>
+  
+app/views/photos/category.html.erb:3:in `block in _app_views_photos_category_html_erb__1435697054154705471_69812413868380'
+app/views/photos/category.html.erb:2:in `_app_views_photos_category_html_erb__1435697054154705471_69812413868380'
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:39:49 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  Rendered photos/category.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-BYST/app/views/photos/category.html.erb:8: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/photos/category.html.erb:8: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/photo/category" for 60.70.102.9 at 2021-05-20 04:40:08 +0000
+Cannot render console from 60.70.102.9! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#category as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:15
+  Rendering photos/category.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."category_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/photos/category.html.erb:2
+  Rendered photos/category.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_search.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+

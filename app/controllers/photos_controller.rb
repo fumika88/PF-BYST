@@ -11,8 +11,15 @@ class PhotosController < ApplicationController
     @photos = Photo.includes(:favorited_users).sort {|a,b| b.favorited_users.size <=> a.favorited_users.size}
   end
 
+  def category
+    @photo = Photo.find_by(category_id: params[:id])
+    @photos = Photo.where(category_id: params[:id]).order('created_at DESC')
+
+  end
+
   def new
     @photo = Photo.new
+
   end
 
   def create
@@ -24,6 +31,7 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Photo.all
+    @category = Category.find_by(category_id: params[:id])
   end
 
   def show
@@ -43,7 +51,7 @@ class PhotosController < ApplicationController
    private
 
   def photo_params
-    params.require(:photo).permit(:name, :image, :caption, :profile_image)
+    params.require(:photo).permit(:name, :image, :caption, :profile_image, :category_id)
   end
 
 end
