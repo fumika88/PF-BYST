@@ -3,6 +3,7 @@
 <h3>Clothes/Photos</h3>
 <div class="row">
 <% @photos.each do |photo| %>
+ <% if photo.category %>
 <div class="col-md-3.5 mt-2 mx-4">
 <div class=" mx-3">
 <%= attachment_image_tag(photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
@@ -18,11 +19,14 @@
 <div class="card-body">
 <h6 class="card-title"><%= photo.name %></h6>
 <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+ <p>カテゴリ:<%= photo.category.name if photo.category %></p>
+ <%= link_to "カテゴリ", photo_category_path %> <%# photo.category.nameにするとエラーになる %>
 </div>
 </div>
 
 </div>
 </div>
+<% end %>
 <% end %>
 </div>
 </div>
