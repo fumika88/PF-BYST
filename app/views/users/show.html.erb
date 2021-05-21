@@ -7,12 +7,12 @@
 
 <%= attachment_image_tag @user, :profile_image, :fill, 300, 300, format: 'jpeg', fallback: "20200501_noimage.jpg", size: '100x100', class: "rounded-circle mx-3" %>
 
-
- <h3 class="profile-name mx-4"><%= @user.name %></h3>
+<h3 class="profile-name mx-4"><%= @user.name %></h3>
 <div class="mx-3"><%= @user.introduction %>
 <% if @user.id == current_user.id %>
-<%= link_to "プロフィール編集", edit_user_path(@user) %>
-<% end %></div>
+<%= link_to "編集", edit_user_path(@user), class: "btn btn-outline-info" %>
+<% end %>
+</div>
 
 </div>
 </div>

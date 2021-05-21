@@ -1,25 +1,25 @@
 
 <%#　コメント機能 %>
 <div class='col-md-12 text-center py-4'>
-  <table class=" py-4">
-  <% photo.photo_comments.each do |photo_comment| %>
-  <% photo_comment_user = photo_comment.user %>
-  <tbody>
-  <tr>
-  <td>
-  <%= link_to user_path(photo_comment_user), class: "user_#{photo_comment_user.id}" do %>
-  <%= attachment_image_tag photo_comment_user, :profile_image, :fill, 50, 50, fallback: "noimage.jpeg", size: "50x50", class: "rounded-circle" %>
-  <%= photo_comment_user.name %>
-  <% end %>
-  </td>
-  <td><%= photo_comment.comment %></td>
-  <td>
-  <% if current_user == photo_comment_user %>
-  <%= link_to 'Destroy', photo_photo_comment_path(photo_comment.photo_id, photo_comment.id), class: 'btn-sm btn-danger', method: :delete, remote: true %></td>
-  <% end %>
-  </td>
-  </tr>
-  </tbody>
-  <% end %>
-  </table>
+<table class=" py-4">
+<% photo.photo_comments.each do |photo_comment| %>
+<% photo_comment_user = photo_comment.user %>
+<tbody>
+<tr>
+<td>
+<%= link_to user_path(photo_comment_user), class: "user_#{photo_comment_user.id}" do %>
+<%= attachment_image_tag photo_comment_user, :profile_image, :fill, 50, 50, fallback: "noimage.jpeg", size: "60x60", class: "rounded-circle" %>
+<%= photo_comment_user.name %>
+<% end %>
+</td>
+<td><%= photo_comment.comment %></td>
+<td>
+<% if current_user == photo_comment_user %>
+<%= link_to '消去', photo_photo_comment_path(photo_comment.photo_id, photo_comment.id), class: 'btn btn-outline-danger', method: :delete, remote: true %></td>
+<% end %>
+</td>
+</tr>
+</tbody>
+<% end %>
+</table>
 </div>

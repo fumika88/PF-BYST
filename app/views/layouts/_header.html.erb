@@ -16,19 +16,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav">
         <% if user_signed_in? %>
-        <%= link_to "New Post", new_photo_path, class: "h5 text-dark my-3" %>
-        <%= link_to "clothes List", photos_path, class: "h5 text-dark my-3" %>
-        <%= link_to "Users", users_path, class: "h5 text-dark my-3" %>
-        <%= link_to "♥ Ranking", photo_ranking_path, class: "h5 text-dark my-3" %>
-        <%= link_to "My page", user_path(current_user.id), class: "h5 text-dark my-3" %>
-        <%= link_to "About", home_about_path, class: "h5 text-dark my-3" %>
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "h5 text-dark my-3" %>
+        <%= link_to "New Post", new_photo_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "clothes List", photos_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "Users", users_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "♥ Ranking", photo_ranking_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "My page", user_path(current_user.id), class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "About", home_about_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
     　　<% else %>
 
-        <%= link_to "Guset Longin", homes_guest_sign_in_path, method: :post, class: "h5 text-dark my-3" %>
-      　<%= link_to "Signup", new_user_registration_path, class: "h5 text-dark my-3" %>
-        <%= link_to "Login", new_user_session_path, class: "h5 text-dark my-3" %>
-        <%= link_to "About", home_about_path, class: "h5 text-dark my-3" %>
+        <%= link_to "Guset Longin", homes_guest_sign_in_path, method: :post, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+      　<%= link_to "Signup", new_user_registration_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "Login", new_user_session_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
+        <%= link_to "About", home_about_path, class: "h5 text-dark my-3 btn btn-outline-secondary w-25" %>
 
 
     　　<% end %>
