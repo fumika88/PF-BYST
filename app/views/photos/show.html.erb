@@ -35,8 +35,9 @@
 <div>コメントしてみてね！</div>
 <div><%= form_with model:[@photo,@photo_comment] do |f| %>
 <%= f.text_area :comment, size:"50x2" %>
-<div class="my-3"><%= f.submit '送信',  class: "btn btn-outline-info"%>
-<% if @photo.user == current_user %>
+<div class="my-3"><%= f.submit '送信',  class: "btn btn-outline-info"%></div>
+
+<div><% if @photo.user == current_user %>
 <%= link_to "削除", photo_path(@photo), method: :delete, class: "btn btn-outline-danger" %>
 <% end %>
 </div>

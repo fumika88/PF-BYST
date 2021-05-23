@@ -6,13 +6,17 @@
 
 <% @users.each do |user| %>
 
-<div class="col-md-3.5 mt-2 mx-5 text-center">
+<div class="col-md-3.5 mt-2 mx-auto">
 
 <div class="card" style="width: 15rem; height: 20rem; text-center">
 <div class="text-center my-3">
 <%= attachment_image_tag(user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg", size: '200x200', class: "rounded-circle text-center") %>
 <div class="card-body">
-<h6 class="card-title"><%= user.name %></h6>
+<h6 class="card-title">
+<%= link_to user_path(user) do %>
+<%= user.name %>
+<% end %>
+</h6>
  <p class="card-text"><%= user.introduction %></P>
 </div>
 </div>

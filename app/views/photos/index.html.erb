@@ -1,6 +1,6 @@
 <%#photo一覧%>
 <div class="container py-4" id="photos">
-<h3>Clothes/Photos</h3>
+<h3 class="text-center my-3">Clothes/Photos</h3>
 <div class="row">
 <% @photos.each do |photo| %>
  <% if photo.category %>
@@ -19,8 +19,12 @@
 <div class="card-body">
 <h6 class="card-title"><%= photo.name %></h6>
 <p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
- <p>カテゴリ:<%= photo.category.name if photo.category %></p>
- <%= link_to "カテゴリ", photo_category_path %> <%# photo.category.nameにするとエラーになる %>
+<p>［Category] :
+<%= link_to photo_category_path(photo.category_id) do %>
+<%= photo.category.name if photo.category %>
+<% end %>
+</p>
+<%# photo.category.nameにするとエラーになる %>
 </div>
 </div>
 

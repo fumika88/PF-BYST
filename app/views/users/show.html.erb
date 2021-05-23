@@ -26,17 +26,17 @@
 <div class="col-md-3.5 mt-2 mx-4 my-3">
 <div class="card" style="width: 20rem; text-cenetr my-3"><%#cardレイアウト%>
 <div class="text-center my-3">
-  <%= link_to photo_path(photo.id) do %>
-  <%= attachment_image_tag photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded" %>
-  <% end %>
-  <p><%= photo.name %></p>
-  <p><%= render_with_hashtags(photo.caption) %></p>
+<%= link_to photo_path(photo.id) do %>
+<%= attachment_image_tag photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded" %>
+<% end %>
+<p><%= photo.name %></p>
+<p><%= render_with_hashtags(photo.caption) %></p>
 </div>
 
 <%# pageメソッドで全ての投稿が表示されないように %>
 <%= paginate @photos %>
 </div>
- </div>
- <% end %>
- </div>
+</div>
+<% end %>
+</div>
 </div>

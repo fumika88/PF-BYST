@@ -9,9 +9,12 @@ class Photo < ApplicationRecord
   has_many :favorited_users, through: :favorites, source: :user #ランキング
 
   attachment :image
-  attachment :profile_image# ここを追加（_idは含めません）
-
+  attachment :profile_image# ここを追加（_idは含めない）
   belongs_to :user
+
+  #バリデーション
+  validates :name, presence: true
+  validates :caption, presence: true
 
   def favorited_by?(user)
     favorites.where(user_id: user.id).exists?
@@ -50,6 +53,7 @@ class Photo < ApplicationRecord
       Photo.where('caption LIKE ?', '%'+content+'%')
     end
   end
+
 
 
 end
