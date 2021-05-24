@@ -12,7 +12,7 @@ class PhotosController < ApplicationController
   end
 
   def category
-    @category = Category.find_by(params[:id])
+    @category = Category.find(params[:id])
     #@category = Category.find_by(category_id: params[:id])
     #@photo = Photo.find_by(params[:id])
     #@photos = Photo.where(category_id: params[:id]).order('created_at DESC')

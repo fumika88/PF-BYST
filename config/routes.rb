@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'photo_comments/create'
   get 'photo_comments/destroy'
   get 'search/search'
-  get '/photo/category', to:"photos#category"
+  get '/photo/category/:id', to:"photos#category", as: "photo_category"
   devise_for :users
   root :to => "homes#top"
   post '/homes/guest_sign_in', to: 'homes#guest_sign_in' #ゲストログインroot

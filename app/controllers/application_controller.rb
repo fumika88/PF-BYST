@@ -1,8 +1,9 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
-
+ 
+ #ログイン後photo/index
   def after_sign_in_path_for(resource)
-    new_photo_path
+    photos_path
   end
 
   protected

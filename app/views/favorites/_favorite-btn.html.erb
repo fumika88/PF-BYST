@@ -1,6 +1,6 @@
 <%# いいね機能 %>
  <% if photo.favorited_by?(current_user) %>
-  <%= link_to photo.favorites.count, photo_favorites_path(photo), method: :delete, remote: true, class: "fas fa-heart" %>
+ <%= link_to photo.favorites.count, photo_favorites_path(photo), method: :delete, remote: true, class: "fas fa-heart", style: "color:red;" %>
  <% else %>
-  <%= link_to photo.favorites.count, photo_favorites_path(photo), method: :post, remote: true, class: "fas fa-heart heart_blue" %>
+ <%= link_to photo.favorites.count, photo_favorites_path(photo), method: :post, remote: true, class: "fas fa-heart" %>
  <% end %>
