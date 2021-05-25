@@ -28,10 +28,12 @@
 
 <div class="card-body mx-auto my-1">
 <%# いいね機能 %>
-<div class="favorite-btn"><%= render "favorites/favorite-btn", photo: @photo %>件のいいね！
-
+<td>
+<span id="photo_<%= @photo.id %>">
+<%= render "favorites/favorite-btn", photo: @photo %></span>
+</td>
 <%# コメント件数 %>
-<i class="far fa-comment"></i><%= @photo.photo_comments.count %></div>
+<td><i class="far fa-comment"></i><%= @photo.photo_comments.count %></td>
 <%# 名前 %>
 <p class="my-3"><%= @photo.name %></p>
 <%# ハッシュタグ %>

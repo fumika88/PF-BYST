@@ -9,6 +9,7 @@ self.data = [
     { id: 6, name: 'Shoes' },
     { id: 7, name: 'Accessories' },
     { id: 8, name: 'Bag' },
+    { id: 9, name: 'Genderless' }
 
   ]
 
