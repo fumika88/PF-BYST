@@ -17,7 +17,7 @@ User.create!(
     name: "fumika1",
     email: "test1@test1.com",
     password: "test1test1",
-    introduction:'test'
+    introduction:'test1'
     }
   ]
 )
