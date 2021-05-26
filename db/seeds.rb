@@ -10,12 +10,14 @@ User.create!(
     {
     name: "fumika",
     email: "test@test.com",
-    password: "testtest"
+    password: "testtest",
+    introduction:'test'
     },
     {
     name: "fumika1",
     email: "test1@test1.com",
-    password: "test1test1"
+    password: "test1test1",
+    introduction:'test'
     }
   ]
 )
