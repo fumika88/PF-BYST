@@ -24,8 +24,8 @@
 　　
 ### 主な利用シーン
 ●欲しい洋服の名前が分からない時　　  
-●自分のファッションに自信がない時　　
-●自分のサイズに合った服が見つからない時　　
+●自分のファッションに自信がない時  
+●自分のサイズに合った服が見つからない時  
 
 ## 設計書
 https://docs.google.com/spreadsheets/d/1BAdyPYifvcB1lMxq5oUKkSF9R1OEB-TVgpe_tcf9_YI/edit#gid=0
