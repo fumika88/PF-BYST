@@ -9,7 +9,7 @@ class Photo < ApplicationRecord
   has_many :favorited_users, through: :favorites, source: :user #ランキング
 
   attachment :image
-  attachment :profile_image# ここを追加（_idは含めない）
+  attachment :profile_image# 追加（_idは含めない）
   belongs_to :user
 
   #バリデーション

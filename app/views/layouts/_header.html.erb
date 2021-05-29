@@ -3,6 +3,10 @@
   <!-- ナビゲーションバー -->
   <nav class="navbar navbar-light bg-light p-4 ">
     <div class="container">
+    <%# notice メッセージ %>
+    <% if flash[:notice] %>
+    <p><%= flash[:notice] %></p>
+    <% end %>
     <!-- タイトル -->
     <a class="navbar-brand" href="#"><%= link_to "B Y S T", root_path, class: 'h4 text-dark' %></a>
     <div><% if user_signed_in? %>

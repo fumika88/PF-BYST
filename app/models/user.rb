@@ -8,9 +8,6 @@ class User < ApplicationRecord
          has_many :favorited_photos, through: :favorites, source: :photo #ランキング
          has_many :photo_comments, dependent: :destroy
          attachment :profile_image
-  #バリデーション
-  #validates :name, length: {maximum: 20, minimum: 2}, uniqueness: true
-  #validates :introduction, length: {maximum: 50}, uniqueness: true
 
   def favorited_by?(user)
     favorites.where(user_id: user.id).exists?
