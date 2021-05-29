@@ -13,9 +13,6 @@ class PhotosController < ApplicationController
 
   def category
     @category = Category.find(params[:id])
-    #@category = Category.find_by(category_id: params[:id])
-    #@photo = Photo.find_by(params[:id])
-    #@photos = Photo.where(category_id: params[:id]).order('created_at DESC')
     @photos = @category.photos
 
   end
@@ -29,7 +26,7 @@ class PhotosController < ApplicationController
     @photo = Photo.new(photo_params)
     @photo.user_id = current_user.id
     if @photo.save
-    redirect_to photos_path, notice: "You have created book successfully."
+    redirect_to photos_path, notice: "You have created photo successfully."
     else render "new"
     end
   end
@@ -37,7 +34,6 @@ class PhotosController < ApplicationController
   def index
     @photos = Photo.all
     @photo = Photo.find_by(params[:id])
-    #必要ないかも
     @category = Category.find_by(params[:category_id])
     if params[:category_id].present?
       @category = Category.find(params[:category_id])
@@ -49,6 +45,19 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
     @user = current_user
     @photo_comment = PhotoComment.new #追加
+  end
+
+  def edit
+    @photo = Photo.find(params[:id])
+  end
+
+  def update
+    @photo = Photo.find(params[:id])
+    if @photo.update(photo_params)
+    redirect_to photo_path(@photo.id), notice: "You have created photo successfully."
+    else render "edit"
+    end
+
   end
 
   def destroy

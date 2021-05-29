@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get '/photo/hashtag/:name', to: "photos#hashtag"
   get '/photo/ranking', to:"photos#ranking"
 
-  resources :photos, only: [:new, :create, :index, :show, :destroy] do
+  resources :photos, only: [:new, :create, :index, :show, :edit, :destroy, :update] do
     resource :favorites, only: [:create, :destroy]
     resources :photo_comments, only: [:create, :destroy, :index]
   end

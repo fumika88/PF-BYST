@@ -1,0 +1,31 @@
+<div class="container-fulid">
+<div class="row">
+<div class="col-md-12 text-center my-4 mx-4">
+
+<div class="card text-center mx-auto" style="width: 25rem;">
+<div class="card-body bg-light text-dark">
+<h3 class="my-3">投稿編集</h3>
+
+<%= form_with model:@photo, local:true do |f| %>
+
+<%= render 'layouts/errors', obj: @photo %>
+<div class="my-3 h5">Image</div>
+<div class="my-3"><%= f.attachment_field :image %></div>
+<div class="my-3">商品名</div>
+<div class="my-3"><%= f.text_field :name, size: "25x5" %></div>
+<div class="my-3">#タグ</div>
+<div class="my-3"><%= f.text_area :caption, size: "25x3" %></div>
+<div class="my-3">カテゴリ</div>
+<%# activehash使用 %>
+<div class="my-3"><%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %></div>
+<div class="my-3"><%= f.submit '編集', class:"btn btn-outline-success" %></div>
+
+
+<% end %>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
