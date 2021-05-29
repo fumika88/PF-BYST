@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   get 'categories/index'
   get 'categories/edit'
-
   get 'photo_comments/create'
   get 'photo_comments/destroy'
   get 'search/search'
