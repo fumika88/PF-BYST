@@ -4,7 +4,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     #pageメソッドを利用して、すべての投稿画像が表示されないように設定
     @photos = @user.photos.page(params[:page]).reverse_order
-    #@photos = @user.photos
   end
 
   def index
