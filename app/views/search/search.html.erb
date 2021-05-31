@@ -1,7 +1,14 @@
+<%# 検索結果一覧 %>
+<div class="container py-4">
+
 <% if @model == 'user' %>
-	<h3>Users search for "<%= @content %>"</h3>
-  <%= render 'users/index', users: @records %>
+<div class="text-center h3">Users search for [<%= @content %>]</div>
+<%= render 'users/index', users: @records %>
 <% elsif @model == 'photo' %>
-	<h3>Photos search for "<%= @content %>"</h3>
-   <%= render 'photos/index', photos: @records %>
+<div class="text-center h3">Photos search for [<%= @content %>]</div>
+<%= render 'photos/index', photos: @records %>
 <% end %>
+<div class="row py-4">
+
+</div>
+</div>

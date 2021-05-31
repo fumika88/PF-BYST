@@ -9,14 +9,12 @@
 <div><%= attachment_image_tag @user, :profile_image, :fill, 300, 300, fallback: "20200501_noimage.jpg", size: '200x200', class: "rounded-circle"%></div>
 <div>ProfileImage</div>
 <div><%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %></div>
-
 <div>Name</div>
 <div><%= f.text_field :name, size: "30x5" %></div>
 <div>Introduction</div>
 <div><%= f.text_area :introduction, size: "40x7" %></div>
 <div><%= f.submit "変更を保存" %></div>
 <% end %>
-
 </div>
 </div>
 </div>

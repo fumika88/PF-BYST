@@ -1,22 +1,38 @@
-<table class='table table-hover table-inverse'>
-  <thead>
-    <tr>
-      <th></th>
-      <th>名前</th>
-      <th>説明</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% photos.each do |photo| %>
-      <tr>
-        <td><%= link_to user_path(photo.user) do %>
-          <%= attachment_image_tag(photo.user, :profile_image, :fill, 50, 50, fallback: "20200501_noimage.jpg", size: '50x50', class: "rounded") %>
-          <% end %>
-        </td>
-        <td><%= link_to photo.name, photo_path(photo), class: "photo_#{photo.id}" %></td>
-        <td><%= photo.caption %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%#photo一覧%>
+<div class="container py-4" id="photos">
+<div class="row">
+
+<% photos.each do |photo| %>
+<%# if文用いてcategory 表示 %>
+<% if photo.category %>
+<div class="col-md-3.5 mt-2 mx-4">
+<div class=" mx-3">
+<%= attachment_image_tag(photo.user, :profile_image, :fill, 300, 300, fallback: "noimage.jpeg",size: '50x50', class: "rounded-circle" ) %>
+<%= link_to user_path(photo.user.id) do %>
+<%= photo.user.name %>
+<% end %>
+</div>
+
+<div class="card-deck">
+<div class="card" style="width: 19rem;">
+<%= link_to photo_path(photo) do %>
+<%= attachment_image_tag photo, :image, :fill, 300, 300, format: 'jpeg', fallback: '20200501_noimage.jpg', size: '300x300', class: "rounded"%>
+<% end %>
+
+<div class="card-body bg-light text-dark">
+<h6 class="card-title"><%= photo.name %></h6>
+<p class="card-text"><%= render_with_hashtags(photo.caption) %></p>
+<p>［Category] :
+<%= link_to photo_category_path(id: photo.category.id) do %>
+<%= photo.category.name if photo.category %><%# if文用いてcategory 表示 %>
+<% end %>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+<% end %>
+<% end %>
+</div>
+</div>

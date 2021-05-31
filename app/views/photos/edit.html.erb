@@ -19,11 +19,7 @@
 <%# activehash使用 %>
 <div class="my-3"><%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %></div>
 <div class="my-3"><%= f.submit '編集', class:"btn btn-outline-success" %></div>
-
-
 <% end %>
-
-
 </div>
 </div>
 </div>
